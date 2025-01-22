@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 7905862072461257586}
   - component: {fileID: -6751065121122316269}
+  - component: {fileID: 4581454102002927170}
+  - component: {fileID: 4936252000898899987}
   m_Layer: 0
   m_Name: DM
   m_TagString: Untagged
@@ -26,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 4937723581858796653}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.0202, y: 4.2977266, z: -5.1176867}
+  m_LocalPosition: {x: 33.866425, y: 0, z: -16.821815}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -44,9 +46,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3eec91ace0635664a832c993d70c24fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mult: 20
-  ancho: 256
-  largo: 256
+  Multiplicador_Perlin: 10
+  ancho: 13
+  largo: 13
   offsetX: 0
   offsetY: 0
   casilla: {fileID: 897347853607660492, guid: 2409f2cc83691ef47b27ab166b890cce, type: 3}
+--- !u!114 &4581454102002927170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4937723581858796653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d6bccf61d907bb4cb9557e611965168, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cantidadRecursos: 4
+  ZonaActual: 0
+  florAzul: {fileID: 6720718581888237422, guid: 665019807c39a444b983852b984b33c3, type: 3}
+  florBlanca: {fileID: 6720718581888237422, guid: 328ec185dde51f941b0951649d8836bf, type: 3}
+  florRoja: {fileID: 6720718581888237422, guid: f97e8899f27fafe42b92e6903f9248a2, type: 3}
+--- !u!114 &4936252000898899987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4937723581858796653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 104ad676abb1ef247905b2bb1d0dfe02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coordenadasSpawn: {x: 0, y: 0, z: 0}
+  Player: {fileID: 3540788654317040036, guid: 1da9156ca3b829a459b9fe7290c47637, type: 3}
